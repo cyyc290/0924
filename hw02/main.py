@@ -24,6 +24,7 @@ for x in range(5):
 turtle.end_fill()
 
 turtle.up()
+turtle.right(85)
 turtle.goto(-100,180)
 turtle.down()
 turtle.begin_fill()
