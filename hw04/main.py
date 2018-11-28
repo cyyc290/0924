@@ -9,13 +9,13 @@ class MainHandler(tornado.web.RequestHandler):
         html='''
         <html>
         <body>
-        <table  border="1" >
+        <table  frame="void" border="1" cellspacing="2" cellpadding="5" >
         '''
         
         for i in range(1,n+1):
             html += '<tr >'
             for j in range(1,i+1):
-                html += '<td> %3d x %3d = %3d  </td>' % (j,i,i*j)
+                html += '<td> %d x %d = %d  </td>' % (j,i,i*j)
             html += '</tr>'
         html+= '''
         </table>
