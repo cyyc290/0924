@@ -5,7 +5,9 @@ class MainHandler(tornado.web.RequestHandler):
     def get(self,n):
 
         n = int(n) if n is not None else 9
-
+        m = int(self.get_argument('n',10))
+        if m in range(1,10):
+            n=m
         html='''
         <html>
         <body>
